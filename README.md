@@ -1,6 +1,5 @@
 # Ana Burger - Website
-![Screenshot_23-9-2024_133254_](https://github.com/user-attachments/assets/e75a7fda-faba-487b-8b65-47569565fa12)
-
+![Screenshot_23-9-2024_132756_](https://github.com/user-attachments/assets/677a9f62-aa91-4899-b83d-aa244977802e)
 
 ## Descrição
 Ana Burger é um site de restaurante que apresenta os melhores hambúrgueres da cidade. O site contém várias seções para uma experiência completa, desde o menu completo até um sistema de reservas e localização no mapa de Moçambique.
