@@ -1,0 +1,676 @@
+/* Estilização do Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* Espaça os itens entre os lados esquerdo e direito */
+    align-items: center;
+    /* Alinha verticalmente no centro */
+    padding: 20px 10%;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 50px;
+    /* Ajuste o tamanho do logotipo */
+    margin-right: 10px;
+    /* Espaço entre o logotipo e o nome */
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    /* Espaço entre os itens do menu */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff5722;
+}
+
+.cta .btn-order {
+    background-color: #ff5722;
+    color: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn-order:hover {
+    background-color: #e64a19;
+}
+
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #121212;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.cta .btn-order {
+    background-color: #ff5722;
+    color: #f5f5f5;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn-order:hover {
+    background-color: #e64a19;
+}
+
+/* Estilização da Hero Section */
+/* Seção de Herói com Imagem de Fundo */
+.hero {
+    height: 100vh;
+    /* Define a altura da seção como 100% da altura da janela */
+    background-image: url('images/hero1.jpeg');
+    /* Caminho da imagem de fundo */
+    background-size: cover;
+    /* Faz com que a imagem cubra toda a seção */
+    background-position: center;
+    /* Centraliza a imagem */
+    display: flex;
+    /* Flexbox para centralizar o conteúdo */
+    align-items: center;
+    /* Alinha o conteúdo verticalmente ao centro */
+    justify-content: center;
+    /* Alinha o conteúdo horizontalmente ao centro */
+    color: #f5f5f5;
+    /* Cor do texto para contraste */
+    text-align: center;
+    /* Centraliza o texto */
+    position: relative;
+    /* Permite a criação de sobreposições */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Sobreposição escura */
+    z-index: 1;
+    /* Coloca a sobreposição atrás do conteúdo */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    /* Garante que o conteúdo esteja acima da sobreposição */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* Adiciona sombra ao texto */
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.btn-order {
+    background-color: #ff5722;
+    color: #f5f5f5;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-order:hover {
+    background-color: #e64a19;
+}
+
+.btn-order {
+    background-color: #ff5722;
+    color: #f5f5f5;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-order:hover {
+    background-color: #e64a19;
+}
+
+/* Estilização da Seção de Destaques do Menu */
+.menu-highlights {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.menu-highlights h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* Permite que os itens se movam para uma nova linha se o espaço for insuficiente */
+}
+
+.menu-item {
+    background-color: #292929;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    /* Tamanho fixo para os itens do menu */
+    transition: transform 0.3s ease;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.menu-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    /* Efeito de hover para destacar o item */
+}
+
+.btn-menu {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 30px;
+    background-color: #ff5722;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-menu:hover {
+    background-color: #e64a19;
+}
+
+/* Estilização da Seção de Depoimentos */
+/* Estilização da Seção de Depoimentos */
+.testimonials {
+    padding: 60px 10%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    color: #292929;
+    margin-bottom: 30px;
+}
+
+.testimonial-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Espaçamento entre os depoimentos */
+}
+
+.testimonial-item {
+    flex-basis: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.testimonial-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-details img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Torna a imagem redonda */
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.name-stars {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #292929;
+}
+
+.stars {
+    color: #ffcc00;
+    font-size: 18px;
+}
+
+.testimonial-item p {
+    font-style: italic;
+    margin-top: 10px;
+    color: #555555;
+}
+
+/* Estilização da Seção de Reservas */
+.special-offers {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.special-offers h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.offer {
+    background-color: #292929;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.offer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    /* Espaçamento entre os campos */
+    width: 300px;
+    /* Largura fixa para os campos de entrada */
+}
+
+.btn-signup {
+    background-color: #ff5722;
+    color: #f5f5f5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-signup:hover {
+    background-color: #e64a19;
+}
+
+.offer-note {
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 15px;
+}
+
+/* Estilização da Seção Sobre Nós */
+.about-us {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.about-content {
+    max-width: 800px;
+    /* Largura máxima para o conteúdo */
+    margin: 0 auto;
+    /* Centraliza o conteúdo */
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    /* Melhora a legibilidade */
+    margin-bottom: 20px;
+}
+
+/* Estilização da Seção Localização */
+.location {
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.location h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.location-content {
+    margin-bottom: 30px;
+}
+
+.location-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.location-content ul {
+    list-style-type: none;
+    /* Remove marcadores da lista */
+    padding: 0;
+    /* Remove padding */
+}
+
+.location-content li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.map {
+    max-width: 100%;
+    /* Limita a largura do mapa */
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    /* Faz o mapa ocupar toda a largura do contêiner */
+    height: 450px;
+    /* Altura fixa do mapa */
+}
+
+/* Estilização da Seção de Contato */
+.contact {
+    padding: 60px 10%;
+    background-color: #121212;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 100%;
+    /* Faz os campos ocuparem toda a largura do contêiner */
+}
+
+.contact-form textarea {
+    height: 100px;
+    /* Altura do campo de mensagem */
+}
+
+.btn-send {
+    background-color: #ff5722;
+    color: #f5f5f5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-send:hover {
+    background-color: #e64a19;
+}
+
+/* Estilização da Seção de Galeria */
+.gallery {
+    padding: 60px 10%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    color: #292929;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: flex;
+    /* Flexbox para alinhar as imagens em linha */
+    justify-content: space-between;
+    /* Espaçamento uniforme entre as imagens */
+    flex-wrap: wrap;
+    /* Imagens quebram para a próxima linha em telas menores */
+}
+
+.gallery-item {
+    flex-basis: 23%;
+    /* Cada item ocupa 23% da largura, deixando espaço entre eles */
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    /* As imagens ocupam a largura total do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para destacar as imagens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animação no hover */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Sombra mais forte ao hover */
+}
+
+/* Estilização do Rodapé */
+.footer {
+    background-color: #292929;
+    color: #f5f5f5;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    /* Utiliza Flexbox para layout */
+    justify-content: space-between;
+    /* Espaçamento entre os itens */
+    flex-wrap: wrap;
+    /* Permite quebra em telas menores */
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+    flex: 1;
+    /* Permite que os blocos ocupem espaço igual */
+    min-width: 200px;
+    /* Largura mínima para responsividade */
+    margin: 10px;
+    /* Espaçamento entre os blocos */
+}
+
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    /* Remove marcadores da lista */
+    padding: 0;
+    /* Remove padding */
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #ff5722;
+    /* Cor dos links */
+    text-decoration: none;
+    /* Remove sublinhado */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    /* Sublinha no hover */
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social .social-icon {
+    margin: 0 10px;
+    color: #ff5722;
+    /* Cor dos ícones sociais */
+    text-decoration: none;
+    /* Remove sublinhado */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}

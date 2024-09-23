@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Burger</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="images/logo.png" alt="Logo Burger Hunt">
+                <span>Ana Burger</span>
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#location">Localização</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="#" class="btn-order">Pedir Agora</a>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>O Melhor Hambúrguer da Cidade!</h1>
+            <p>Ingredientes frescos, sabor incomparável.</p> 
+            <p>O hambúrguer que você merece.</p>
+            <a href="#" class="btn-order">Faça Seu Pedido</a>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h2>Sobre Nós</h2>
+        <div class="about-content">
+            <p> Bem-vindo ao nosso Ana Burger! Nossa paixão por hambúrgueres começou em uma pequena cozinha, onde
+                experimentamos receitas únicas e deliciosas. Hoje, estamos orgulhosos de oferecer uma variedade de
+                hambúrgueres artesanais feitos com ingredientes frescos e de alta qualidade.</p>
+            <p> Nossa missão é proporcionar uma experiência gastronômica inesquecível, combinando sabores incríveis com um
+                ambiente acolhedor e amigável. Acreditamos que cada mordida deve ser uma celebração, e nos esforçamos para
+                atender todos os nossos clientes com um sorriso.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Destaques do Menu -->
+    <section class="menu-highlights">
+        <h2>Nossos Hambúrgueres Irresistíveis</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/burger1.jpeg" alt="Hambúrguer Clássico">
+                <h3>Hambúrguer Clássico</h3>
+                <p>Um hambúrguer suculento com queijo cheddar, alface e tomate.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/burger2.jpeg" alt="Hambúrguer BBQ">
+                <h3>Hambúrguer BBQ</h3>
+                <p>Delicioso hambúrguer coberto com molho barbecue e cebola caramelizada.</p>
+            </div>
+            <div class="menu-item">
+                <img src="images/burger3.jpeg" alt="Hambúrguer Vegano">
+                <h3>Hambúrguer Vegano</h3>
+                <p>Feito com grão-de-bico e especiarias, servido com abacate e rúcula.</p>
+            </div>
+        </div>
+        <p>Explore nossas opções deliciosas de hambúrgueres, batatas, bebidas e sobremesas!</p>
+        <a href="#menu" class="btn-menu" onclick="openMenuModal()">Veja o Menu Completo</a>
+    </section>
+    
+
+    <!-- (Seção de Depoimentos) -->
+    <section class="testimonials">
+        <h2>O Que Nossos Clientes Dizem</h2>
+        <div class="testimonial-items">
+            <div class="testimonial-item">
+                <div class="testimonial-details">
+                    <img src="images/bruno.jpg" alt="Foto de Bruno Franciso">
+                    <div class="name-stars">
+                        <h3>- Bruno Franciso</h3>
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+                <p>"Os melhores hambúrgueres que já comi! O atendimento é excelente e a qualidade dos ingredientes é
+                    incomparável."</p>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-details">
+                    <img src="images/francisco.jpg" alt="Foto de Francisco Silvano">
+                    <div class="name-stars">
+                        <h3>- Francisco Silvano</h3>
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+                <p>"A experiência foi incrível! O hambúrguer BBQ é o meu favorito. Definitivamente voltarei!"</p>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-details">
+                    <img src="images/ana.jpg" alt="Foto de Ana Augusto">
+                    <div class="name-stars">
+                        <h3>- Ana Augusto</h3>
+                        <span class="stars">★★★★★</span>
+                    </div>
+                </div>
+                <p>"Adorei o hambúrguer vegano! Saboroso e muito bem apresentado. Recomendo a todos!"</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="special-offers">
+        <h2>Reserve Sua Mesa Hoje!</h2>
+        <div class="offer">
+            <p>Venha desfrutar de nossos deliciosos hambúrgueres em um ambiente acolhedor.</p>
+            <p>Faça sua reserva agora e garanta um lugar especial para você e seus amigos!</p>
+            <form class="reservation-form">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <input type="tel" placeholder="Seu Telefone" required>
+                <input type="date" required>
+                <input type="time" required>
+                <textarea placeholder="Mensagem Adicional (opcional)" rows="4"></textarea>
+                <button type="submit" class="btn-signup">Reservar Agora!</button>
+            </form>
+            <p class="offer-note">*Reservas com 24 horas de antecedência.</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Explore Nossos Restaurantes</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="images/hero1.jpeg" alt="Ambiente do Restaurante">
+            </div>
+            <div class="gallery-item">
+                <img src="images/hero2.jpeg" alt="Interior Moderno">
+            </div>
+            <div class="gallery-item">
+                <img src="images/hero3.jpeg" alt="Prato Especial">
+            </div>
+            <div class="gallery-item">
+                <img src="images/hero.jpeg" alt="Momentos Inesquecíveis">
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <h2>Nossa Localização</h2>
+        <div class="location-content">
+            <p> Estamos localizados no coração da cidade, prontos para recebê-lo!</p>
+            <p><strong>Endereço:</strong> Avenida da Liberdade, 123, Maputo, Moçambique</p>
+            <p><strong>Horário de Funcionamento:</strong></p>
+            <ul>
+                <li>Segunda a Sexta: 11h - 22h</li>
+                <li>Sábado e Domingo: 12h - 23h</li>
+            </ul>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15756.960315677265!2d32.5734209910546!3d-25.9694693950764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ff7b0f1b30118d7%3A0xbff0ff73d8d87c2e!2sAvenida%20da%20Liberdade%2C%20123%2C%20Maputo%2C%20Mo%C3%A7ambique!5e0!3m2!1sen!2sus!4v1611234567890"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Entre em Contato Conosco</h2>
+        <div class="contact-info">
+            <p><strong>Telefone:</strong> (+258) 845-5603-981</p>
+            <p><strong>E-mail:</strong> contato@Ana Burguer.com</p>
+            <p><strong>Endereço:</strong> Avenida da Liberdade, 123, Maputo, Moçambique</p>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Mensagem" rows="4" required></textarea>
+            <button type="submit" class="btn-send">Enviar Mensagem</button>
+        </form>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Sobre Nós</h3>
+                <p>O Ana Burger oferece os melhores hambúrgueres da cidade, feitos com ingredientes frescos e de alta
+                    qualidade.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Redes Sociais</h3>
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ana Burger. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
