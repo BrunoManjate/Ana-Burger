@@ -42,7 +42,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request 
 
 0. Faça um fork do projeto.
 1. Crie uma nova branch para a sua funcionalidade
-2. ommit suas mudanças
+2. Commit suas mudanças
 3. Envie para sua branch
 4. Abra um Pull Request
 
